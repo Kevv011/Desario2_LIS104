@@ -72,9 +72,10 @@ class AuthController
         }
     }
 
+    //Metodo para mostrar los datos registrados
     public function mostrarDatos()
     {
-        session_start(); // Asegúrate de iniciar sesión
+        session_start(); 
         $usuario = $_SESSION['usuario_registrado'] ?? null;
 
         if ($usuario) {
